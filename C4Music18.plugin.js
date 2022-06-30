@@ -1,6 +1,6 @@
 /**
  * @name C4Music18
- * @version 0.1.5
+ * @version 0.1.6
  * @author XerwinXpl
  * @description play C418 music
  * @authorLink https://twitter.com/XerwinXpl
@@ -37,6 +37,7 @@ var audio;
 module.exports = class C4Music18 {
     load() {}
     start() {
+        var l_t_id;
         var t_id = randomNumber(0, 8);
         //BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id], {type: "success", icon: false, timeout: 5000});
         trackToast(t_id)
@@ -44,7 +45,10 @@ module.exports = class C4Music18 {
         audio.volume = 0.1;
         audio.play();
         audio.onended = function() {
-            t_id = randomNumber(0, 8);
+            l_t_id = t_id;
+            while (t_id == l_t_id) {
+                t_id = randomNumber(0, 8);
+            }
             //BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id], {type: "success", icon: false, timeout: 5000});
             trackToast(t_id)
             audio = new Audio(tracks[t_id]);
@@ -64,4 +68,5 @@ function randomNumber(min, max) {
 
 function trackToast(tid) {
     BdApi.showToast("now playing : " + (tid+1) + " | C418 - " + names[tid], {type: "success", icon: false, timeout: 7500});
+    console.log("now playing : " + (tid+1) + " | C418 - " + names[tid]);
 }
