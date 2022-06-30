@@ -8,13 +8,6 @@
  * @source https://raw.githubusercontent.com/E15dev/C4Music18/main/C4Music18.plugin.js
  */
 
-
-//const test_audio_link = 'https://t4.bcbits.com/stream/433394b5867317aecb383601f830efef/mp3-128/1603173650?p=0&amp;ts=1656633589&amp;t=63e32ea177cedd9754ead49d0b1e98e7e459434d&amp;token=1656633589_01f13e3c15873007c7389c61c1fae653c2c28fe1&quot;'
-//const test_audio_link_C418 = 'https://t4.bcbits.com/stream/cd49e5352cc9a20d9dfc578532536470/mp3-128/3116021428?p=0&ts=1656675218&t=68c0c9ad1155150a94e634bf7526457c73e176e4&token=1656675218_ba44184baea6457e2fd6f1245da45a914c455db8'
-/**const tracks = [
-    test_audio_link,
-    test_audio_link_C418]**/
-
 const tracks = [
     'https://t4.bcbits.com/stream/bc6aac1858567be93a888c8975e884d4/mp3-128/1077969287?p=0&ts=1656680730&t=3d0a9bbaf363f70994caeb276f9ad84e55a65f26&token=1656680730_198b3a330946c99a3b444a62b02c3f3d037884e2',
     'https://t4.bcbits.com/stream/3be9ef24e0e1128d52a97f18ad80a170/mp3-128/2210605235?p=0&ts=1656680730&t=5e264e8fb0bd87e3d1baa834759dabef13af505e&token=1656680730_cc9dcd276d54582deefa830e3193959240021074',
@@ -45,21 +38,24 @@ module.exports = class C4Music18 {
     load() {}
     start() {
         var t_id = randomNumber(0, 8);
-        //var track_now = _.sample(tracks);
-        var track_now = tracks[t_id];
-        //BdApi.showToast("now playing : " + track_now);
         BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id]);
-        audio = new Audio(track_now);
+        audio = new Audio(tracks[t_id]);
         audio.volume = 0.1;
         audio.play();
+        audio.onended = function() {
+            t_id = randomNumber(0, 8);
+            BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id]);
+            audio = new Audio(tracks[t_id]);
+            audio.volume = 0.1;
+            audio.play();
+        };
     }
 
     stop() {
-        //dont touch
         audio.pause();
     }
 }
 
 function randomNumber(min, max) { 
     return Math.round(Math.random() * (max - min) + min);
-} 
+}
