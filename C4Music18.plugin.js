@@ -16,13 +16,15 @@ var audio;
 module.exports = class C4Music18 {
     load() {}
     start() {
-        BdApi.showToast(_.sample(tracks));
-        audio = new Audio(_.sample(tracks));
+        var track_now = _.sample(tracks);
+        BdApi.showToast("now playing : " + track_now);
+        audio = new Audio(track_now);
         audio.volume = 0.3
         audio.play()
     }
 
     stop() {
+        //dont touch
         audio.pause();
     }
 }
