@@ -21,11 +21,11 @@ const tracks = [
 ]
 
 const names = [
-    'kaffe',
+    'kaffee',
     'bummer',
-    'penauts',
+    'peanuts',
     'familiar faces',
-    'its complicated',
+    "it's complicated",
     'hotel music',
     'repetition',
     'sod',
