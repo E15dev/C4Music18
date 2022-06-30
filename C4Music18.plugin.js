@@ -1,6 +1,6 @@
 /**
  * @name C4Music18
- * @version 0.1.1
+ * @version 0.1.5
  * @author XerwinXpl
  * @description play C418 music
  * @authorLink https://twitter.com/XerwinXpl
