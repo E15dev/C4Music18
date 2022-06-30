@@ -38,13 +38,15 @@ module.exports = class C4Music18 {
     load() {}
     start() {
         var t_id = randomNumber(0, 8);
-        BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id]);
+        //BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id], {type: "success", icon: false, timeout: 5000});
+        trackToast(t_id)
         audio = new Audio(tracks[t_id]);
         audio.volume = 0.1;
         audio.play();
         audio.onended = function() {
             t_id = randomNumber(0, 8);
-            BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id]);
+            //BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id], {type: "success", icon: false, timeout: 5000});
+            trackToast(t_id)
             audio = new Audio(tracks[t_id]);
             audio.volume = 0.1;
             audio.play();
@@ -58,4 +60,8 @@ module.exports = class C4Music18 {
 
 function randomNumber(min, max) { 
     return Math.round(Math.random() * (max - min) + min);
+}
+
+function trackToast(tid) {
+    BdApi.showToast("now playing : " + (tid+1) + " | C418 - " + names[tid], {type: "success", icon: false, timeout: 7500});
 }
