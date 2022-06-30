@@ -16,14 +16,27 @@
     test_audio_link_C418]**/
 
 const tracks = [
-    'https://t4.bcbits.com/stream/cd49e5352cc9a20d9dfc578532536470/mp3-128/3116021428?p=0&ts=1656680158&t=11198d90e955d0a2e77955636a0f50ff8bca1601&token=1656680158_7a9e206ef2112293e690797325b6c724e19c7a4f',
-    'https://t4.bcbits.com/stream/2546e3eda89b7aaccbdc80ad853cc1fd/mp3-128/1328755437?p=0&ts=1656680158&t=a10194b6beb383e641466fd505dd0ec342415453&token=1656680158_20b9637c4612d47068c4d739b99cfc1766e0ffa2',
-    'https://t4.bcbits.com/stream/f9c0ebb02d3d9975c7142d891b79a547/mp3-128/91570495?p=0&ts=1656680158&t=3d7728209b1603efe3668c6aebaeef953d25174d&token=1656680158_eb34f950d2b4e9ceeef4fd1d91fdbf5875bbd5a5',
-    'https://t4.bcbits.com/stream/85f789b256addf5e69d5c6f4f3c91eb6/mp3-128/2834993980?p=0&ts=1656680158&t=fdee08c8f0678bbcd2b1c5d3bf0752b220f89c88&token=1656680158_3196ee54f2f54c2069bb065b29bf26394616076e',
-    'https://t4.bcbits.com/stream/b358d1961c607e28f79450f8bc685205/mp3-128/4056329291?p=0&ts=1656680158&t=0a8c67ed015c4a165c3de066a117db71f1822c91&token=1656680158_e2e0db9300fe5bbda78845ff68abd54e3a3ee54e',
-    'https://t4.bcbits.com/stream/1b3385bf8c4169623952758e2a364909/mp3-128/2420183342?p=0&ts=1656680158&t=0c9f378e371389b930a4b11ee44654f8cd8f90d6&token=1656680158_2b60e4d7b2f3033ee6be5ad0a4a2b069dd58bf1e',
-    'https://t4.bcbits.com/stream/3be9ef24e0e1128d52a97f18ad80a170/mp3-128/2210605235?p=0&ts=1656680158&t=d400a77d9218f7367cf5b0cd45f898df76bbb656&token=1656680158_edf3064070b98cdf41057717ea01b886c2dce8ab',
-    'https://t4.bcbits.com/stream/bc6aac1858567be93a888c8975e884d4/mp3-128/1077969287?p=0&ts=1656680158&t=bb2b77761ca42a4ffa59285bfd9d5475f6727f50&token=1656680158_9dc49502cf8aa166a14cfb916ff6301216a38309'
+    'https://t4.bcbits.com/stream/bc6aac1858567be93a888c8975e884d4/mp3-128/1077969287?p=0&ts=1656680730&t=3d0a9bbaf363f70994caeb276f9ad84e55a65f26&token=1656680730_198b3a330946c99a3b444a62b02c3f3d037884e2',
+    'https://t4.bcbits.com/stream/3be9ef24e0e1128d52a97f18ad80a170/mp3-128/2210605235?p=0&ts=1656680730&t=5e264e8fb0bd87e3d1baa834759dabef13af505e&token=1656680730_cc9dcd276d54582deefa830e3193959240021074',
+    'https://t4.bcbits.com/stream/1b3385bf8c4169623952758e2a364909/mp3-128/2420183342?p=0&ts=1656680730&t=9f99ac2879d6fd1395725b7b8a806a7a9decb195&token=1656680730_d90dc25d5a00f5d83732120506e99cf9da0f7ee8',
+    'https://t4.bcbits.com/stream/b358d1961c607e28f79450f8bc685205/mp3-128/4056329291?p=0&ts=1656680730&t=8d6f20b1639cc2490a7276eb1a397090c0f7a264&token=1656680730_1802d177300346206fb89b9d140c3f1c30bc0dc6',
+    'https://t4.bcbits.com/stream/85f789b256addf5e69d5c6f4f3c91eb6/mp3-128/2834993980?p=0&ts=1656680730&t=86d4b1564cf34be0146481b34f360016a5f837fe&token=1656680730_9a382b73fbd8553e1647c98dd8552d77c9ba9372',
+    'https://t4.bcbits.com/stream/f9c0ebb02d3d9975c7142d891b79a547/mp3-128/91570495?p=0&ts=1656680730&t=cf717c0e68a5b52404c38f8666881c4932ee5ca6&token=1656680730_8d5208dfaaaf19756b46583cc26d665d425fda78',
+    'https://t4.bcbits.com/stream/2546e3eda89b7aaccbdc80ad853cc1fd/mp3-128/1328755437?p=0&ts=1656680730&t=f2e2a6be06a4a9033584836677c975017d8ab086&token=1656680730_89b391a232b47c53f92f25dabdd99112984e100d',
+    'https://t4.bcbits.com/stream/cd49e5352cc9a20d9dfc578532536470/mp3-128/3116021428?p=0&ts=1656680880&t=64ff93bc9b6064f75deffbc8e1df68c3ab98e859&token=1656680880_9747c4094e6ee9e8032fcd87dbcd80e2bccc6ff9',
+    'https://t4.bcbits.com/stream/17299ba58416eb288d6e8a2e8665476d/mp3-128/3433861699?p=0&ts=1656680758&t=36a2bb290fd33a3568dbcecb51718bb8ee6df216&token=1656680758_2a3864ba28bf3d9a7cc492a4a5bbffb3d573a38f'
+]
+
+const names = [
+    'kaffe',
+    'bummer',
+    'penauts',
+    'familiar faces',
+    'its complicated',
+    'hotel music',
+    'repetition',
+    'sod',
+    'heyhey'
 ]
 
 var audio;
@@ -31,8 +44,11 @@ var audio;
 module.exports = class C4Music18 {
     load() {}
     start() {
-        var track_now = _.sample(tracks);
-        BdApi.showToast("now playing : " + track_now);
+        var t_id = randomNumber(0, 8);
+        //var track_now = _.sample(tracks);
+        var track_now = tracks[t_id];
+        //BdApi.showToast("now playing : " + track_now);
+        BdApi.showToast("now playing : " + (t_id+1) + " | " + names[t_id]);
         audio = new Audio(track_now);
         audio.volume = 0.1;
         audio.play();
@@ -43,3 +59,7 @@ module.exports = class C4Music18 {
         audio.pause();
     }
 }
+
+function randomNumber(min, max) { 
+    return Math.round(Math.random() * (max - min) + min);
+} 
